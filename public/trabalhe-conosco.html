@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trabalhe Conosco</title>
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+	<!-- Custom CSS -->
+  	<link rel="stylesheet" href="assets/css/style.css">
+  	<!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+</head>
+<body>
+
+	<div w3-include-html="header.html"></div>
+	
+	<div class="row">
+		<div class="col s12 amber darken-2">
+			<div class="container">
+				<h1 class="white-text">Trabalhe Conosco</h1>
+				<p class="white-text flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<ul class="tabs tabs-fixed-width styled-1 amber darken-2 white-text">
+					<li class="tab col s3"><a href="#test1" class="active">Estágio</a></li>
+					<li class="tab col s3"><a href="#test2">Carreira</a></li>
+					<li class="tab col s3"><a href="#test3">Freelancer</a></li>
+					<li class="tab col s3"><a href="#test4">Fornecedor</a></li>
+				</ul>
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.col s12 -->
+		<div id="test1" class="col s12">
+			<div class="container" style="margin-top: 30px;">
+				<!-- <div class="col s12">
+					
+					<div class="card horizontal">
+						<div class="card-image col s12 m6 l6">
+							<img src="https://static3.bigstockphoto.com/0/2/2/large1500/220241068.jpg">
+						</div>
+						<div class="card-stacked col s12 m6 l6">
+							<div class="card-content">
+								<p class="flow-text blue-grey-text darken-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. </p>
+							</div>
+							<div class="card-action">
+								<a href="#">This is a link</a>
+							</div>
+						</div>
+					</div>
+
+				</div> -->
+				<!-- /.col s12 -->
+				<div class="col s12 m6 l6">
+					<h4 class="blue-grey-text darken-1">Venha por em prática todo seu conhecimento!</h4>
+					<p class="flow-text blue-grey-text darken-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+				<!-- /.col s12 m6 l6 -->
+				<div class="col s12 m6 l6">
+					<form>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="name" type="text" class="validate">
+								<label for="name" class="amber-text darken-1">Nome</label>
+							</div><!-- input-field col s6 -->
+						</div>
+						<!-- /.row -->
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="email" type="email" class="validate">
+								<label for="email" class="amber-text darken-1">E-mail</label>
+							</div><!-- input-field col s6 -->
+						</div>
+						<!-- /.row -->
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="subject" type="text" class="validate">
+								<label for="subject" class="amber-text darken-1">Área de Interesse</label>
+							</div><!-- input-field col s6 -->
+						</div>
+						<!-- /.row -->
+						<div class="file-field input-field">
+				      		<div class="btn btn-flat white ">
+				        		<span class="amber-text darken-2"><i class="material-icons float-left">attach_file</i> Anexar</span>
+				        		<input type="file">
+				      		</div>
+				      		<div class="file-path-wrapper">
+				        		<input class="file-path validate" type="text">
+				      		</div>
+					    </div>
+						<!-- /.row -->
+						<div class="row">
+							<div class="col s12 right-align">
+								<a class="waves-effect waves-light btn amber darken-2 white-text"><i class="material-icons right">send</i>enviar</a>
+							</div>
+							<!-- /.col s12 -->
+						</div>
+						<!-- /.row -->
+					</form>
+				</div>
+				<!-- /.col s12 m6 l6 -->
+			</div>
+		</div>
+		<div id="test2" class="col s12">
+			<div class="container">
+				
+			</div>
+		</div>
+		<div id="test3" class="col s12">
+			<div class="container">
+				
+			</div>
+		</div>
+		<div id="test4" class="col s12">
+			<div class="container">
+				
+			</div>
+		</div>
+	</div>
+	<!-- /.row -->
+	
+	<div w3-include-html="footer.html"></div>
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript">
+		w3.includeHTML();
+		$(document).ready(function(){
+			$(".button-collapse").sideNav();
+			$('.slider').slider();
+			$('.parallax').parallax();
+			$('.scrollspy').scrollSpy();
+		});
+	</script>
+	
+</body>
+</html>
