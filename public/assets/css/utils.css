@@ -1,0 +1,9 @@
+a, a:visited, a:focus, a:active, a:hover
+{
+    outline:0 none !important;
+}
+a.invisible 
+{
+	text-decoration: none;
+	color: inherit;
+}

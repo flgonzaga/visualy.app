@@ -17,13 +17,28 @@
 	<div w3-include-html="header.html"></div>
 
 	<div class="container">
-		
-		<h1 class="amber-text darken-2">Portfolio</h1>
+		<div class="row">
+			<div class="col s12 m7">
+				<h1 class="amber-text darken-2">Portfolio</h1>
+			</div>
+			<!-- /.col s12 m6 -->
+			<div class="col s12 m5 mt-3">
+				<form class="right-align">
+					<div class="input-field col s12">
+						<input id="name" type="text">
+						<label for="name" class="amber-text darken-1">Pesquisar</label>
+					</div><!-- input-field col s6 -->
+				</form>
+			</div>
+			<!-- /.col s12 m6 -->
+		</div>
+		<!-- /.row -->
+
+		<!-- breadcrumb -->
 		<small class="blue-grey-text lighten-1">Home / <strong>Portfolio</strong></small>
 
-		
 		<div class="fixed-action-btn fixed-action-btn-cp toolbar hide-on-small-only">
-			<a class="btn-floating btn-large amber darken-2"><i class="large material-icons">search</i></a>
+			<a class="btn-floating btn-large amber darken-2"><i class="large material-icons">menu</i></a>
 			<ul>
 				<li class="waves-effect waves-light"><a href="#!">Logotipos</a></li>
 		      	<li class="waves-effect waves-light"><a href="#!">Websites</a></li>
@@ -33,43 +48,23 @@
 		      	<li class="waves-effect waves-light"><a href="#!">Outros</a></li>
 			</ul>
 		</div>
+		<!-- fixed-action-btn -->
 
 		<div class="divider"></div>
-		<div class="col s12">&nbsp;</div>
+		<div class="col s12">
+			<div class="spacer-5"></div>
+		</div>
 		<!-- /.col s12 -->
 		
   		<div class="row">
   			<div class="col s12">
   				
-				<a href="portfolio-detail.html" class="invisible">
-					<div class="col s12 m4 l4">
-						<div class="card">
-					        <div class="card-image">
-					          <img src="assets/images/WMG-mockup.jpg" class="fixed-height-200">
-					          <span class="btn-floating halfway-fab waves-effect waves-light amber darken-1"><i class="material-icons">add</i></span>
-					        </div>
-					        <div class="card-content">
-					          <span class="card-title">WMG Indústria</span>
-					        </div>
-					     </div>
-				     </div>
-					<!-- /.col s12 m4 l4 -->
-				</a>	
-
-				<a href="portfolio-detail.html" class="invisible">
-					<div class="col s12 m4 l4">
-						<div class="card">
-					        <div class="card-image">
-					          <img src="http://visualy.com.br/uploads/2531/apresentao.jpg" class="fixed-height-200">
-					          <span class="btn-floating halfway-fab waves-effect waves-light amber darken-1"><i class="material-icons">add</i></span>
-					        </div>
-					        <div class="card-content">
-					          <span class="card-title">Luciana Caetano</span>
-					        </div>
-					     </div>
-				     </div>
-					<!-- /.col s12 m4 l4 -->
-				</a>	
+  				<div w3-include-html="portfolio-item.html"></div>
+  				<div w3-include-html="portfolio-item.html"></div>
+  				<div w3-include-html="portfolio-item.html"></div>
+  				<div w3-include-html="portfolio-item.html"></div>
+  				<div w3-include-html="portfolio-item.html"></div>
+  				<div w3-include-html="portfolio-item.html"></div>
 
   			</div>
   			<!-- /.col s12 -->
@@ -86,6 +81,7 @@
 				    <li class="waves-effect"><a href="#!">5</a></li>
 				    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
 				</ul>
+				<a href="mosaic.html" class="btn amber darken-2"><i class="material-icons left">apps</i> Modo Mosaico</a>
   			</div>
   			<!-- /.col s12 -->
   		</div>
@@ -96,19 +92,14 @@
 
 	<div w3-include-html="footer.html"></div>
 
+	<!-- Return to Top -->
+	<a href="javascript:" id="return-to-top"><i class="large material-icons">keyboard_arrow_up</i></a>
+
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<!-- Compiled and minified JavaScript -->
 	<script type="text/javascript" src="assets/js/materialize.min.js"></script>
 	<script src="https://www.w3schools.com/lib/w3.js"></script>
-	<script type="text/javascript">
-		w3.includeHTML();
-		$(document).ready(function(){
-			$(".button-collapse").sideNav();
-			$('.slider').slider();
-			$('.parallax').parallax();
-			$('.scrollspy').scrollSpy();
-		});
-	</script>
+	<script src="assets/js/main.js"></script>
 	
 </body>
 </html>
