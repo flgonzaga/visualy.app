@@ -1,7 +1,6 @@
-
-.card .small 
-{
-	height: 250px !important;
+@import	"helpers.css";
+a, a:visited, a:focus, a:active, a:hover{
+    outline:0 none !important;
 }
 #sidenav-overlay 
 { 
@@ -32,10 +31,11 @@
 	color: #ffb300 !important;
 }
 /* label underline focus color */
-.input-field input[type=text]:focus, .input-field input[type=text]:active
+.input-field input[type=text]:focus, .input-field input[type=text]:active,
+.input-field input[type=email]:focus, .input-field input[type=email]:active
 {
-	border-bottom: 1px solid #ffb300;
-	box-shadow: 0 1px 0 0 #ffb300;
+	border-bottom: 1px solid #ffb300 !important;
+	box-shadow: 0 1px 0 0 #ffb300 !important;
 }
 /* valid color */
 .input-field input[type=text].valid 
@@ -54,9 +54,18 @@
 {
 	color: #ffb300;
 }
+.input-field textarea[class=materialize-textarea]:focus {
+	border-bottom: 1px solid #ffb300;
+	box-shadow: 0 1px 0 0 #ffb300;
+}
 .fixed-height-200 {
-    max-height: 200px;
-    min-height: 200px;
+    max-height: 200px !important;
+    min-height: 200px !important;
+    object-fit: cover;
+}
+.fixed-height-250 {
+    max-height: 250px !important;
+    min-height: 250px !important;
     object-fit: cover;
 }
 .transparent-bg-dark-7
@@ -110,4 +119,13 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.6);
+}
+a.invisible {
+	text-decoration: none;
+	color: inherit;
+}
+/*Btn Float Custom Position*/
+.fixed-action-btn-cp {
+	position: relative;
+	float: right;
 }
