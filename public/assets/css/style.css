@@ -63,6 +63,12 @@
 {
 	color: #ffb300;
 }
+.fixed-height-150 
+{
+    max-height: 150px !important;
+    min-height: 150px !important;
+    object-fit: cover;
+}
 .fixed-height-200 
 {
     max-height: 200px !important;
@@ -139,7 +145,8 @@
 	float: right;
 	bottom: initial;
 }
-#return-to-top {
+#return-to-top 
+{
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -160,7 +167,8 @@
     transition: all 0.3s ease;
     z-index: 3;
 }
-#return-to-top i {
+#return-to-top i 
+{
     color: #fff;
     margin: 0;
     position: relative;
@@ -173,10 +181,15 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-#return-to-top:hover {
+#return-to-top:hover 
+{
     background: rgba(0, 0, 0, 0.9);
 }
-#return-to-top:hover i {
+#return-to-top:hover i 
+{
     color: #fff;
     top: 5px;
+}
+blockquote {
+    border-left: 5px solid #cecece;
 }

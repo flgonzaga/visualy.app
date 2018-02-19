@@ -22,6 +22,16 @@
     {
         margin-right: $margin !important;
     }
+    .mx-#{$i} 
+    {
+        margin-left: $margin !important;
+        margin-right: $margin !important;
+    }
+    .my-#{$i} 
+    {
+        margin-top: $margin !important;
+        margin-bottom: $margin !important;
+    }
 }
 
 @for $i from 0 through 5 
@@ -48,11 +58,22 @@
     {
         padding-right: $padding !important;
     }
+    .px-#{$i} 
+    {
+        padding-left: $padding !important;
+        padding-right: $padding !important;
+    }
+    .py-#{$i} 
+    {
+        padding-top: $padding !important;
+        padding-bottom: $padding !important;
+    }
 }
 
 @for $i from 1 through 5
 {
   .spacer-#{$i} {
     height: $i + em;
+    clear: both;
   }  
 }
